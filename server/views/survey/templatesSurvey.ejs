@@ -1,0 +1,41 @@
+<!--
+Filename: templatesSurvey.ejs
+Group name: Xtreme Dynamos
+Date: November 11, 2021
+-->
+
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/main_nav.ejs') %>
+
+<main>
+    <h3 style="text-align: center">Create a survey using one of the two templates below:</h3>
+      <div>
+        <table style="margin-top: 50px;">
+          <tr>
+            <td>
+              <div class="card" style="width: 18rem;">
+                <img src="/assets/images/gameDesign.png" class="card-img-top" alt="Survey Template 1">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Template 1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="/survey-listSurvey/firstTemplateSurvey" class="btn btn-success">Create</a>
+                  </div>
+              </div>
+            </td>
+            <td>
+              <div class="card" style="width: 18rem;">
+                <img src="/assets/images/gameDesign.png" class="card-img-top" alt="Survey Template 2">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Template 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="/survey-listSurvey/secondTemplateSurvey" class="btn btn-success">Create</a>
+                  </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+</main>
+
+<%- include('../partials/bottom_nav.ejs') %>
+<%- include('../partials/footer.ejs') %>

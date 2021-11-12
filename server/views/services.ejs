@@ -1,0 +1,92 @@
+<!--
+Filename: services.ejs
+Group name: Xtreme Dynamos
+Date: November 11, 2021
+-->
+
+<%- include('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
+
+<!--Main content-->
+<main class="container">
+    <div  style="padding-top: 10px;">
+        <p class="titles"><%= title %></p>
+
+        <!--Body of main-->
+        <table>
+            <tr>
+                <td>
+
+                    <!--Cards class used from Bootstrap 5.1 - Flexible container that organizes an image, title, and body-->
+                    <!--Card 1 - General Programming Service-->
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img id="quickbooks" src="/assets/images/generalProgramming.png" class="card-img-top" alt="Network">
+                        <!--Card-body class from Bootstrap 5.1 - Organizes the body of the card. Allows for other functionalities
+                        to be added.-->
+                        <div class="card-body">
+                            <div class="secondaryTitles">
+                              General Programming
+                            </div>
+
+                            <!--List of Services-->
+                            <p class="card-text"> 
+                              &emsp;Need a custom solution to an inconvenient problem?
+                              <ul>
+                                  <li>C#</li>
+                                  <li>JavaScript</li>
+                                  <li>Java</li>
+                                  <li>and more...</li>
+                              </ul>
+                        </div>
+                    </div>
+                </td>
+                <td>
+
+                    <!--Card 2 - Website Development Service-->
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="/assets/images/website.png" class="card-img-top" alt="Barlow Interface">
+                        <div class="card-body">
+                            <div class="secondaryTitles">
+                                Website Development
+                            </div>
+                            
+                            <!--List of Services-->
+                            <p class="card-text"> &emsp;Custom website or choose your platform:
+                                <ul>
+                                    <li>WordPress</li>
+                                    <li>WIX</li>
+                                    <li>Shopify</li>
+                                    <li>and more...</li>   
+                                </ul>          
+                        </div>
+                    </div>
+                </td>
+                <td style="text-align: center;">
+
+                    <!--Video Game Design Servive-->
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="/assets/images/gameDesign.png" class="card-img-top" alt="Metamorpharts">
+                        <div class="card-body">
+                            <div class="secondaryTitles">
+                                Video Game Design
+                            </div>
+
+                            <!--List of Services-->
+                          <p class="card-text">&emsp;Need assistance developing your ideas ?
+                                <ul>
+                                    <li>Unity Engine</li>
+                                    <li>Visual Studio</li>
+                                    <li>Blender</li>
+                                    <li>and more...</li>   
+                                </ul> 
+                          </p>
+                        </div>
+                      </div>
+                </td>
+            </tr>
+        </table>  
+   </div>
+</main>
+
+<%- include('partials/bottom_nav.ejs') %>
+<%- include('partials/footer.ejs') %>

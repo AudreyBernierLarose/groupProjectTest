@@ -1,0 +1,84 @@
+<!--
+Filename: projects.ejs
+Group name: Xtreme Dynamos
+Date: November 11, 2021
+-->
+
+<%- include('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
+
+<!--Main content-->
+<main>
+    <div>
+        <p class="titles"><%= title %></p>
+
+<!--Body of main-->
+        <table>
+            <tr>
+                <td>
+
+                    <!--Cards class used from bootstrap 5.1 - Flexible container that organizes an image, title, and body-->
+                    <!--Card 1 - Estimating Project-->
+                    <div class="card" style="width: 18rem;">
+                        <img id="quickbooks" src="/assets/images/quickbooksProject.png" class="card-img-top" alt="Network">
+                        <!--Card-body class from Bootstrap 5.1 - Organizes the body of the card. Allows for other functionalities
+                        to be added.-->
+                        <div class="card-body">
+                            <div class="secondaryTitles">
+                              Estimating System
+                            </div>
+                            
+                            <!--Short Description-->
+                            <p class="card-text"> 
+                              &emsp;I am currently working on an estimating system that will integrate 
+                              with QuickBooks to calculate accurate estimates. My roles are to design and program Super Dave 
+                              using C# and the MVVM architecture. This is an ongoing project.</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+
+                    <!--Card 2 - Video Game Project-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/images/barlowInterface.png" class="card-img-top" alt="Barlow Interface">
+                        <div class="card-body">
+                            <div class="secondaryTitles">
+                                Barlow
+                            </div>
+
+                            <!--Short Description-->
+                            <p class="card-text"> &emsp;I am currently working on a platformer video game called Barlow.
+                                In this adventure game, the player must help Stella traverse each level while gathering as many points as possible.  
+                                My roles are to design and program this project. This is an ongoing project.</p>                      
+                        </div>
+                    </div>
+                </td>
+                <td style="text-align: center;">
+
+                    <!--Card 3 - Metamorpharts Project-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/images/metamorpharts.png" class="card-img-top" alt="Metamorpharts">
+                        <div class="card-body">
+                            <div class="secondaryTitles">
+                                Metamorpharts
+                            </div>
+
+                            <!--Short Description-->
+                          <p class="card-text"> &emsp;Metamorpharts is a company that sells handmade pens and pencils, bags, furnitures, and more.
+                              My roles are to protograph the products and design the website using wix templates. 
+                              This is an ongoing project.
+                          </p>
+
+                          <!--Link to Metamorpharts Website-->
+                          <a href="https://www.metamorpharts.com/" target="_blank" class="btn btn-dark">Website</a>
+                        </div>
+                      </div>
+                </td>
+            </tr>
+        </table>  
+    </div>
+</main>
+
+
+<%- include('partials/bottom_nav.ejs') %>
+<%- include('partials/footer.ejs') %>

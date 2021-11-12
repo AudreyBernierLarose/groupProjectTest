@@ -1,0 +1,60 @@
+<!--
+Filename: contact.ejs
+Group name: Xtreme Dynamos
+Date: November 11, 2021
+-->
+<%- include('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
+
+<!--Main content-->
+<main>
+    <div style="padding-top: 20px;">
+        <p class="titles"><%= title %></p>
+        <hr style="border-width: 2px; border-color:black; width: 600px; margin-left: auto; margin-right: auto;">
+        
+        <!--Personel Information-->
+    <panel style="text-align: center;">
+        <p>Gatineau,  Quebec<br> 819.661.5191<br>abernier@my.centennialcollege.ca<br></p>
+    </panel>
+
+<!--Form-->
+<div id="errorMessage" style="text-align: center; padding: 10px; color:red"></div>
+    <form method="POST" action="mailto:abernier@my.centennialcollege.ca" novalidate="novalidate" class="centerForm">
+        <fieldset id="information">
+                <!--First Name Field-->
+                <p> &emsp;You can reach me directly by filling out this form:</p>
+               <label class="contactForm">First name: </label>
+               <input name="txtFullName" type="text" size="25" tabindex="1" /><br><br>
+
+               <!--Last Name Field-->
+               <label class="contactForm">Last name: </label>
+               <input name="txtLastName" type="text" size="25" tabindex="3" /><br><br>
+               <div id="eErrorPhone" style="padding-left: 10px; color: red;"></div><br>
+
+               <!--Phone Number Field-->
+               <label class="contactForm">Phone number:</label>
+               <input id="phone" name="txtPhoneNumber" size="25" tabindex="5" type="text" placeholder="888-888-8888" ><br><br>
+               <div id="eErrorMessage" style="padding-left: 10px; color: red;"></div><br>
+
+               <!--Email Address Field-->
+               <label class="contactForm">Email address: </label>
+               <input id="email" name="txtEmail" size="30" tabindex="7" type="text" placeholder="user@email.com"><br><br>
+
+               <!--Message Field-->
+               <label class="contactForm">Message: </label>
+               <textarea name="txtMessage" cols="30" rows="5" tabindex="9" placeholder="Write your message here"></textarea><br>
+        </fieldset>
+      
+        <!--Submit and Reset Buttons-->
+        <div>
+            <input id="submitBtn" name="btnSubmit" tabindex="11" type="submit" value="Send your questions!" class="center">
+            <input id="resetBtn" name="btnSubmit" tabindex="13" type="reset" value="Reset form" class="center">
+        </div>
+           
+    </form>
+</main>
+
+<script src="/scripts/contactScript.js"></script>
+
+<%- include('partials/bottom_nav.ejs') %>
+<%- include('partials/footer.ejs') %>
